@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htmlbasico</title>
+    <link rel="stylesheet" href="../css/Cursohtml.css">
+</head>
+<body>
+    <header>
+            <!-- Encabezado principal del documento -->
+
+        <h1>CURSO BÁSICO DE HTML</h1> 
+
+    </header>
+        <!-- Enlace para regresar a la página de cursos -->
+
+       <a  href="../html/cursos.html" type="button" class="btn">Regresar</a>
+
+    <main>
+                <!-- Sección principal de contenido -->
+        <section class="preguntas container">
+            <h2 class="subtitle">Tabla de Contenido</h2>
+            <p class="preguntas__paragraph">Explora cómo HTML te permite estructurar y presentar contenido en la web de manera efectiva.</p>
+            .</p>
+           
+            <!-- Contenedor de los artículos de preguntas y respuestas -->
+            <section class="preguntas container">
+    <article class="preguntas__padding">
+        <div class="preguntas__answer">
+            <h3 class="preguntas__title">Tema 1: Introducción a HTML
+                <span class="preguntas__arrow">
+                    <img src="../img/arrow.svg" class="preguntas__img">
+                </span>
+            </h3>
+            <div class="preguntas__content">
+                <p class="preguntas__concept">HTML es el lenguaje de marcado estándar para crear páginas web. Permite estructurar el contenido en la web.</p>
+                <div class="preguntas__example">
+                    <p><strong>Ejemplo práctico:</strong></p>
+                    <pre class="preguntas__show">
+                                    <code>&lt;!DOCTYPE html&gt;
+                                    &lt;html&gt;
+                                    &lt;head&gt;
+                      &lt;title&gt;Página de ejemplo&lt;/title&gt;
+                                    &lt;/head&gt;
+                                     &lt;body&gt;
+                             &lt;h1&gt;Hola, mundo!&lt;/h1&gt;
+                      &lt;p&gt;Este es un párrafo en HTML.&lt;/p&gt;
+                                    &lt;/body&gt;
+                                   &lt;/html&gt;
+                                </code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="preguntas__padding">
+        <div class="preguntas__answer">
+            <h3 class="preguntas__title">Tema 2: Estructura básica de un documento HTML
+                <span class="preguntas__arrow">
+                    <img src="../img/arrow.svg" class="preguntas__img">
+                </span>
+            </h3>
+            <div class="preguntas__content">
+                <p class="preguntas__concept">La estructura básica de un documento HTML incluye las etiquetas <code>&lt;!DOCTYPE html&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, y <code>&lt;body&gt;</code>.</p>
+                <div class="preguntas__example">
+                    <p><strong>Ejemplo práctico:</strong></p>
+                    <pre class="preguntas__show">
+                        <code>&lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                            &lt;head&gt;
+                            &lt;title&gt;Mi Página&lt;/title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                            &lt;h1&gt;Bienvenido a mi página&lt;/h1&gt;
+                            &lt;/body&gt;
+                            &lt;/html&gt;</code>
+                            </pre>
+                        
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="preguntas__padding">
+        <div class="preguntas__answer">
+            <h3 class="preguntas__title">Tema 3: Etiquetas de encabezado
+                <span class="preguntas__arrow">
+                    <img src="../img/arrow.svg" class="preguntas__img">
+                </span>
+            </h3>
+            <div class="preguntas__content">
+                <p class="preguntas__concept">Las etiquetas de encabezado, <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>, se utilizan para definir los títulos y subtítulos en una página web.</p>
+                <div class="preguntas__example">
+                    <p><strong>Ejemplo práctico:</strong></p>
+                    <pre class="preguntas__show">
+                            <code>     &lt;h1&gt;Encabezado 1&lt;/h1&gt;
+                                    &lt;h2&gt;Encabezado 2&lt;/h2&gt;
+                                    &lt;h3&gt;Encabezado 3&lt;/h3&gt;</code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="preguntas__padding">
+        <div class="preguntas__answer">
+            <h3 class="preguntas__title">Tema 4: Párrafos y texto
+                <span class="preguntas__arrow">
+                    <img src="../img/arrow.svg" class="preguntas__img">
+                </span>
+            </h3>
+            <div class="preguntas__content">
+                <p class="preguntas__concept">Las etiquetas <code>&lt;p&gt;</code> se utilizan para definir párrafos, y <code>&lt;strong&gt;</code> o <code>&lt;em&gt;</code> se utilizan para texto en negrita o cursiva, respectivamente.</p>
+                <div class="preguntas__example">
+                    <p><strong>Ejemplo práctico:</strong></p>
+                    <pre class="preguntas__show">
+                        <code>&lt;p&gt;Este es un párrafo.&lt;/p&gt;
+&lt;p&gt;Este es un &lt;strong&gt;texto en negrita&lt;/strong&gt; y este es un &lt;em&gt;texto en cursiva&lt;/em&gt;.&lt;/p&gt;</code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="preguntas__padding">
+        <div class="preguntas__answer">
+            <h3 class="preguntas__title">Tema 5: Listas
+                <span class="preguntas__arrow">
+                    <img src="../img/arrow.svg" class="preguntas__img">
+                </span>
+            </h3>
+            <div class="preguntas__content">
+                <p class="preguntas__concept">HTML soporta listas ordenadas (<code>&lt;ol&gt;</code>) y listas no ordenadas (<code>&lt;ul&gt;</code>).</p>
+                <div class="preguntas__example">
+                    <p><strong>Ejemplo práctico:</strong></p>
+                    <pre class="preguntas__show">
+                    <code>&lt;ul&gt;
+                        &lt;li&gt;Elemento de lista no ordenada&lt;/li&gt;
+                        &lt;li&gt;Otro elemento&lt;/li&gt;
+                &lt;/ul&gt;
+                 &lt;ol&gt;
+                        &lt;li&gt;Elemento de lista ordenada&lt;/li&gt;
+                        &lt;li&gt;Otro elemento&lt;/li&gt;
+                &lt;/ol&gt;</code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="preguntas__padding">
+        <div class="preguntas__answer">
+            <h3 class="preguntas__title">Tema 6: Enlaces
+                <span class="preguntas__arrow">
+                    <img src="../img/arrow.svg" class="preguntas__img">
+                </span>
+            </h3>
+            <div class="preguntas__content">
+                <p class="preguntas__concept">Los enlaces se crean utilizando la etiqueta <code>&lt;a&gt;</code>, y el atributo <code>href</code> define la URL del destino del enlace.</p>
+                <div class="preguntas__example">
+                    <p><strong>Ejemplo práctico:</strong></p>
+                    <pre class="preguntas__show">
+                <code>&lt;a href="https://www.ejemplo.com"&gt;Visita Ejemplo.com&lt;/a&gt;</code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="preguntas__padding">
+        <div class="preguntas__answer">
+            <h3 class="preguntas__title">Tema 7: Imágenes
+                <span class="preguntas__arrow">
+                    <img src="../img/arrow.svg" class="preguntas__img">
+                </span>
+            </h3>
+            <div class="preguntas__content">
+                <p class="preguntas__concept">Las imágenes se insertan usando la etiqueta <code>&lt;img&gt;</code>, con atributos como <code>src</code> para la fuente de la imagen y <code>alt</code> para el texto alternativo.</p>
+                <div class="preguntas__example">
+                    <p><strong>Ejemplo práctico:</strong></p>
+                    <pre class="preguntas__show">
+                <code>&lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;</code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="preguntas__padding">
+        <div class="preguntas__answer">
+            <h3 class="preguntas__title">Tema 8: Tablas
+                <span class="preguntas__arrow">
+                    <img src="../img/arrow.svg" class="preguntas__img">
+                </span>
+            </h3>
+            <div class="preguntas__content">
+                <p class="preguntas__concept">Las tablas en HTML se crean usando las etiquetas <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code> y <code>&lt;th&gt;</code>.</p>
+                <div class="preguntas__example">
+                    <p><strong>Ejemplo práctico:</strong></p>
+                    <pre class="preguntas__show">
+<code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Encabezado 1&lt;/th&gt;
+        &lt;th&gt;Encabezado 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Celda 1&lt;/td&gt;
+        &lt;td&gt;Celda 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="preguntas__padding">
+        <div class="preguntas__answer">
+            <h3 class="preguntas__title">Tema 9: Formularios
+                <span class="preguntas__arrow">
+                    <img src="../img/arrow.svg" class="preguntas__img">
+                </span>
+            </h3>
+            <div class="preguntas__content">
+                <p class="preguntas__concept">Los formularios permiten a los usuarios enviar datos a un servidor. Se crean usando la etiqueta <code>&lt;form&gt;</code> y varios elementos de entrada como <code>&lt;input&gt;</code>.</p>
+                <div class="preguntas__example">
+                    <p><strong>Ejemplo práctico:</strong></p>
+                    <pre class="preguntas__show">
+<code>&lt;form&gt;
+    &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+    &lt;input type="text" id="nombre" name="nombre"&gt;
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;</code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="preguntas__padding">
+        <div class="preguntas__answer">
+            <h3 class="preguntas__title">Tema 10: Audio y Video
+                <span class="preguntas__arrow">
+                    <img src="../img/arrow.svg" class="preguntas__img">
+                </span>
+            </h3>
+            <div class="preguntas__content">
+                <p class="preguntas__concept">HTML5 introdujo las etiquetas <code>&lt;audio&gt;</code> y <code>&lt;video&gt;</code> para la reproducción de archivos de audio y video directamente en la página web.</p>
+                <div class="preguntas__example">
+                    <p><strong>Ejemplo práctico:</strong></p>
+                     <pre class="preguntas__show">
+<code> &lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    Tu navegador no soporta la etiqueta de audio.
+&lt;/audio&gt;
+
+&lt;video width="320" height="240" controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Tu navegador no soporta la etiqueta de video.
+&lt;/video&gt;</code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="preguntas__padding">
+        <div class="preguntas__answer">
+            <h3 class="preguntas__title">Tema 11: Elementos de bloque y en línea
+                <span class="preguntas__arrow">
+                    <img src="../img/arrow.svg" class="preguntas__img">
+                </span>
+            </h3>
+            <div class="preguntas__content">
+                <p class="preguntas__concept">Los elementos de bloque ocupan todo el ancho disponible y siempre comienzan en una nueva línea, mientras que los elementos en línea solo ocupan el espacio necesario y no forzan un salto de línea.</p>
+                <div class="preguntas__example">
+                    <p><strong>Ejemplo práctico:</strong></p>
+                    <pre class="preguntas__show">
+            <code>&lt;div&gt;Este es un div, que es un elemento de bloque.&lt;/div&gt;
+        &lt;span&gt;Este es un span, que es un elemento en línea.&lt;/span&gt;</code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="preguntas__padding">
+        <div class="preguntas__answer">
+            <h3 class="preguntas__title">Tema 12: Comentarios en HTML
+                <span class="preguntas__arrow">
+                    <img src="../img/arrow.svg" class="preguntas__img">
+                </span>
+            </h3>
+            <div class="preguntas__content">
+                <p class="preguntas__concept">Los comentarios en HTML se escriben entre <code>&lt;!-- --&gt;</code> y no se muestran en el navegador.</p>
+                <div class="preguntas__example">
+                    <p><strong>Ejemplo práctico:</strong></p>
+                    <pre class="preguntas__show">
+                        <code>&lt;!-- Este es un comentario en HTML --&gt;</code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+
+        </section>
+    </main>
+            <!-- footer -->
+
+    <footer class="footer">
+        <p>&copy; 2024 Aprende Desarrollo Web. Todos los derechos reservados.</p>
+        <p>
+            <a href="#">HTML</a> |
+            <a href="#">CSS</a> |
+            <a href="#">JavaScript</a> |
+            <a href="#">C#</a> |
+            <a href="#">C++</a>
+        </p>
+        <p>Sigue aprendiendo y mejorando tus habilidades. 
+            <a href="#">Contacto</a> | 
+            <a href="#">Sobre Nosotros</a> | 
+            <a href="#">Privacidad</a>
+        </p>
+    </footer>
+        <!-- Enlace al archivo JavaScript para funcionalidad adicional -->
+    <script src="../js/acordeon.js"></script>
+</body>
+</html>

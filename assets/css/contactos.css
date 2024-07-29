@@ -1,0 +1,376 @@
+
+/* Estilos generales para todos los elementos */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --padding-container: 100px 0;
+    --color-title: #202224;
+}
+
+body {
+  
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #eeeeee;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+    flex: 1;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    min-height: 100x;
+    max-height: 150px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../img/logo\ de\ programacion.jpg');
+    background-size: cover;
+ 
+    z-index: -1;
+}
+
+/* Nav */
+.nav {
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__title {
+    font-weight: 200;
+}
+
+.nav__link {
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav__items {
+    list-style: none;
+}
+
+.nav__links {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__menu {
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__img {
+    display: block;
+    width: 30px;
+}
+
+.nav__close {
+    display: var(--show, none);
+    position: absolute;
+    top: 10px; /* Ajusta este valor según sea necesario */
+    right: 10px; /* Ajusta este valor según sea necesario */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 101; 
+}
+
+/* Estilos para el contenedor del héroe */
+.hero__container {
+    max-width: 800px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 3rem;
+}
+
+.hero__paragraph {
+    margin-bottom: 20px;
+}
+
+.cta {
+    display: inline-block;
+    background-color: #0938af;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
+
+/* estilos generales de la Sección de contacto*/
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    background: #fff;
+    padding: 40px;
+    margin: 20px auto;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.contenedor h1{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+    color: black;
+}
+
+.contenido{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.contenido .info,
+.contenido .formulario{
+    width: 50%;
+}
+
+/*Estilos info*/
+
+.info{
+    padding-left: 10px;
+}
+
+.info .col{
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 16px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.info .col .icono{
+    color:#efb300;
+    margin-right: 10px;
+}
+
+.info .col p{
+    color: #000000;
+}
+
+.info .redes-s{
+    width: 100%;
+    overflow: hidden;
+    padding-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.info .redes-s a{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: #efb300;
+    color: #fff;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, .4);
+}
+.info .redes-s a:hover{
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, .4);
+     background: #000; 
+}
+
+/*Estilos formulario*/
+
+.formulario{
+    padding-left: 10px;
+}
+
+.formulario input[type='text'],
+.formulario input[type='email'],
+.formulario textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border: 1px solid #999;
+    color: #999;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    outline: 0;
+}
+
+.formulario textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+    max-height: 200px;
+}
+
+.formulario input[type='text']:focus,
+.formulario textarea:focus{
+    border: 1px solid #0333d2;
+}
+
+.formulario button{
+    padding: 12px 30px;
+    border: transparent;
+    background: #0748d4;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+}
+
+
+
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer a {
+    color: #1e90ff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+/* Media Queries */
+/* Media Queries para pantallas pequeñas */
+
+@media (max-width: 520px){
+    .contenedor{
+        padding: 40px 20px;
+    }
+ 
+    .contenido .info,
+    .contenido .formulario{
+        width: 100%;
+        padding: 0px;
+    }
+ 
+    .contenido .info{
+        margin-bottom: 30px;
+    }
+ }
+@media screen and (max-width: 768px) {
+    .nav__link {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav__link.nav__link--menu {
+        display: flex;
+    }
+
+    .nav__menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__close {
+        display: none;
+    }
+
+    .nav__img {
+        width: 25px;
+        height: 25px;
+    }
+    
+}
+
+
+
+@media (max-width:800px){        
+    .contenido .info,
+        .contenido .formulario{
+            width: 100%;
+            padding: 0px;
+        }
+     
+        .contenido .info{
+            margin-bottom: 30px;
+        }
+  
+
+    .nav__menu{
+        display: block;
+    }
+
+    .nav__link--menu{
+        position: fixed;
+        background-color: #233680;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: .7s opacity;
+    }
+
+    .nav__link--show {
+        --show: block; /* Mostrar el ícono de cerrar */
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+    .nav__close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+        display: var(--show); /* Asegurarse de que el ícono de cerrar se muestre */
+    }
+}
+

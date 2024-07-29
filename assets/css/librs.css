@@ -1,0 +1,406 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --padding-container: 100px 0;
+    --color-title: #202224;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #eeeeee;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+    flex: 1;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    min-height: 100px;
+    max-height: 150px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+/* Estilo de la sección de héroe: ocupa el 100% del ancho y alto de la ventana, usa un diseño de grid y establece el color del texto en blanco */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../img/logo de programacion.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Nav */
+.nav {
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__title {
+    font-weight: 200;
+}
+
+.nav__link {
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav__items {
+    list-style: none;
+}
+
+.nav__links {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__menu {
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__img {
+    display: block;
+    width: 30px;
+}
+
+.nav__close {
+    display: var(--show, none);
+    position: absolute;
+    top: 10px; /* Ajusta este valor según sea necesario */
+    right: 10px; /* Ajusta este valor según sea necesario */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 101; 
+}
+
+/* Hero container */
+.hero__container {
+    max-width: 800px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+}
+/* Título del héroe */
+.hero__title {
+    text-transform: uppercase;
+    font-size: clamp(1rem, 6vw, 3rem);
+}
+
+.hero__paragraph {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+.cta {
+    display: inline-block;
+    background-color: #0938af;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+    height: 100%;
+    width: 100%;
+}
+
+.hero__cta {
+    width: max-content;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    background-color: #04C2C9;
+    padding: .5em 2em;
+    border-radius: 10em;
+}
+/* Título principal de la página */
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    color: black;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 15px;
+    text-shadow: 0 15px 10px rgb(0, 0, 0, 0.2);
+}
+.cursos__paragraph {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Sección de libros en grid */
+
+.libros {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2em;
+}
+
+.libro {
+    background-color: #aff3e9;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    transition: .2s linear;
+}
+/* Efecto hover en libros */
+
+.libro:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.libro img {
+    max-width: 350px;
+    min-height: 250px;
+    height: auto;
+    border-radius: 10px;
+    transition: .2s linear;
+}
+
+.libro__title {
+    font-size: 1.2em;
+    margin: 1em 0;
+    transition: .2s linear;
+}
+
+.libro__description {
+    font-size: 1em;
+    margin: 0.5em 0;
+    transition: .2s linear;
+}
+/* Efecto hover en libros */
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+    background-color: #080a0a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.btn:hover {
+    background-color: #0c6c73;
+    letter-spacing: 1px;
+}
+
+/* Estilo del modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: .2s linear;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 800px;
+    transition: .2s linear;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    position: fixed; 
+    top: 50px; 
+    right: 400px; 
+    color: #f0ecec;
+    font-size: 50px; 
+    font-weight: bold;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+
+.close:hover,
+.close:focus {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer a {
+    color: #1e90ff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: .2s linear;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .nav__link {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav__link.nav__link--menu {
+        display: flex;
+    }
+
+    .nav__menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__close {
+        display: none;
+    }
+
+    .nav__img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .modal-content {
+        width: 95%;
+        max-width: 100%;
+        height: 80%;
+    }
+
+    .modal-content iframe {
+        height: 100%;
+    }
+    
+    .close {
+        font-size: 25px;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 800px) {
+    .nav__menu {
+        display: block;
+    }
+
+    .nav__link--menu {
+        position: fixed;
+        background-color: #233680;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: .7s opacity;
+    }
+    .nav__link--show {
+        --show: block; /* Mostrar el ícono de cerrar */
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+    .nav__close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+        display: var(--show); /* Asegurarse de que el ícono de cerrar se muestre */
+    }
+
+    /* Ajustes para la sección de libros */
+    .libros {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+    .libro img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+}
+
+/* Estilos adicionales para tamaños de pantalla aún más pequeños */
+@media (max-width: 480px) {
+    .modal-content {
+        width: 95%;
+        height: 80%;
+    }
+
+    .modal-content iframe {
+        height: 100%;
+    }
+
+    .close {
+        font-size: 25px;
+    }
+}

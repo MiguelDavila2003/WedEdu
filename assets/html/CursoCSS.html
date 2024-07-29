@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssbasico</title>
+    <link rel="stylesheet" href="../css/CursoCSS.css">
+</head>
+<body>
+    <header>
+        <!-- Encabezado principal del documento -->
+        <h1>CURSO BÁSICO DE CSS</h1> 
+    </header>
+    <!-- Enlace para regresar a la página de cursos -->
+    <a href="../html/cursos.html" type="button" class="btn">Regresar</a>
+    <main>
+        <!-- Sección principal de contenido -->
+        <section class="preguntas container">
+            <h2 class="subtitle">Tabla de Contenido</h2>
+            <p class="preguntas__paragraph">Explora cómo CSS te permite diseñar y estilizar páginas web de manera atractiva y coherente.</p>
+            <!-- Contenedor de los artículos de preguntas y respuestas -->
+            <section class="preguntas container">
+                <!-- Tema 1 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 1: Introducción a CSS
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">CSS (Cascading Style Sheets) es un lenguaje utilizado para describir la presentación de un documento HTML.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>body {
+    background-color: lightblue;
+}
+h1 {
+    color: navy;
+    margin-left: 20px;
+}</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 2 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 2: Selectores
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Los selectores se utilizan para seleccionar los elementos HTML que queremos estilizar.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+                                    <code>/* Selector de tipo */
+p {
+    color: red;
+}
+
+/* Selector de clase */
+.intro {
+    font-size: 20px;
+}
+
+/* Selector de ID */
+#header {
+    background-color: yellow;
+}</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 3 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 3: Propiedades y valores
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Las propiedades son los aspectos de los elementos que se pueden cambiar, y los valores son las especificaciones de esas propiedades.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: blue;
+}</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 4 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 4: Colores y fondos
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">CSS permite cambiar los colores del texto y de fondo de los elementos HTML.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>body {
+    background-color: #f0f0f0;
+}
+h1 {
+    color: #333;
+}
+p {
+    background-color: yellow;
+    color: red;
+}</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 5 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 5: Fuentes y texto
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">CSS se utiliza para cambiar la fuente, el tamaño del texto y otros aspectos tipográficos.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 6 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 6: Modelo de caja (Box Model)
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">El modelo de caja de CSS describe cómo se colocan los elementos en la página, incluyendo márgenes, bordes, rellenos y el contenido real.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>div {
+    width: 300px;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 20px;
+}</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 7 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 7: Bordes
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Se pueden añadir bordes a los elementos HTML y estilizar su grosor, color y estilo.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>p {
+    border: 1px solid black;
+    border-radius: 5px;
+}</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 8 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 8: Margen y relleno (Margin & Padding)
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Margin y padding son propiedades que permiten crear espacio alrededor de los elementos.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>div {
+    margin: 20px;
+    padding: 10px;
+}</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 9 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 9: Flexbox
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Flexbox es un modelo de diseño que proporciona una forma más eficiente de distribuir el espacio entre los elementos de un contenedor, incluso cuando su tamaño es desconocido y/o dinámico.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 10 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 10: Posicionamiento
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">El posicionamiento en CSS permite especificar la posición de un elemento en la página. Los valores comunes incluyen static, relative, absolute y fixed.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>div {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 11 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 11: Diseño de cuadrícula (Grid)
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">El diseño de cuadrícula (CSS Grid) es una técnica poderosa para crear layouts complejos con filas y columnas.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>div.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+div.item {
+    background-color: lightblue;
+    padding: 20px;
+}</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 12 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 12: Medios y consultas de medios (Media Queries)
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Las consultas de medios (media queries) permiten aplicar estilos CSS según las características del dispositivo, como el ancho de la pantalla, para hacer diseños responsivos.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
+}</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+              <!-- footer -->
+
+              <footer class="footer">
+                <p>&copy; 2024 Aprende Desarrollo Web. Todos los derechos reservados.</p>
+                <p>
+                    <a href="#">HTML</a> |
+                    <a href="#">CSS</a> |
+                    <a href="#">JavaScript</a> |
+                    <a href="#">C#</a> |
+                    <a href="#">C++</a>
+                </p>
+                <p>Sigue aprendiendo y mejorando tus habilidades. 
+                    <a href="#">Contacto</a> | 
+                    <a href="#">Sobre Nosotros</a> | 
+                    <a href="#">Privacidad</a>
+                </p>
+            </footer>
+                <!-- Enlace al archivo JavaScript para funcionalidad adicional -->
+            <script src="../js/acordeon.js"></script>
+        </body>
+        </html>

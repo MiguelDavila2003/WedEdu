@@ -1,0 +1,282 @@
+
+:root {
+    --padding-container: 100px 0;
+    --color-title: #202224;
+    --show: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+    flex: 1;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    min-height: 100px;
+    max-height: 150px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../img/logo\ de\ programacion.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Nav */
+.nav {
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__title {
+    font-weight: 300;
+}
+
+.nav__link {
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav__items {
+    list-style: none;
+}
+
+.nav__links {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__menu {
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__img {
+    display: block;
+    width: 30px;
+}
+
+.nav__close {
+    display: var(--show);
+    position: absolute;
+    top: 10px; /* Ajusta este valor según sea necesario */
+    right: 10px; /* Ajusta este valor según sea necesario */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 101; 
+}
+
+/* Hero container */
+
+.cta {
+    display: inline-block;
+    background-color: #0938af;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+    
+}
+
+/* Estilo nosotros */
+
+.nosostros {
+    background-color: #fefefe;
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    overflow: hidden;
+}
+
+
+.nosostros__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+.nosostros__picture {
+    max-width: 200%;
+    border-radius: 5px;
+}
+
+.nosostros__paragraph {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-title);
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer a {
+    color: #1e90ff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+    .nav__link--show {
+        --show: block; /* Mostrar el ícono de cerrar */
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+    .nav__close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+        display: var(--show); /* Asegurarse de que el ícono de cerrar se muestre */
+    }
+    .container {
+        padding: 50px 0;
+    }
+
+    .hero {
+        grid-template-rows: 70px 1fr;
+        min-height: 150px;
+        max-height: 200px;
+    }
+
+    .hero__title {
+        font-size: 1.8rem;
+    }
+
+    .hero__paragraph {
+        margin-bottom: 15px;
+    }
+
+    .cta {
+        padding: 10px 20px;
+    }
+
+    .nosostros__container {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+    .nosostros__picture {
+        max-width: 100%;
+    }
+
+    .nosostros__paragraph {
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav__menu {
+        display: block;
+    }
+
+    .nav__link--menu {
+        position: fixed;
+        background-color: #233680;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: .7s opacity;
+    }
+
+    .nav__link--show {
+        --show: block;
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+    .nav__close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+        display: var(--show);
+    }
+    .nosostros__container {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+    .nosostros__picture {
+        max-width: 100%;
+    }
+
+    .nosostros__paragraph {
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        padding: 15px 0;
+    }
+}
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="../css/contactos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+        <!-- Encabezado principal -->
+
+    <header class="hero">
+        <!-- Navbar --> 
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">WebEdu Libre </h2>
+            </div>
+    
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="../../index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="nosotros.html" class="nav__links">Nosotros</a>
+                </li>
+                <li class="nav__items">
+                    <a href="cursos.html" class="nav__links">Cursos</a>
+                </li>
+                <li class="nav__items">
+                    <a href="librs.html" class="nav__links">Libros</a>
+                </li>
+             
+                <li class="nav__items">
+                    <a href="contacto.html" class="nav__links">Contactanos</a>
+                </li>
+                <img src="../img/close.svg" class="nav__close" alt="Close menu">
+            </ul>
+            <div class="nav__menu">
+                <img src="../img/menu.svg" class="nav__img" alt="Open menu">
+            </div>
+    </header>
+    <main>
+            <!-- Contenido principal -->
+
+        <!-- Sección de contacto -->
+        <section class="cursos ">
+            <div class="contenedor">
+
+                <h1> Contactanos </h1>
+        
+                <div class="contenido">
+        
+                    <div class="info">
+                                <!-- Iconos de redes sociales -->
+
+                        <div class="col">
+                            <i class="icono fas fa-map-marker-alt"></i>
+                            <p>Localización  Managua  Nicaragua</p>
+                        </div>
+        
+                        <div class="col">
+                            <i class="icono fas fa-envelope"></i>
+                            <p>Antecionalclientes@correo.com</p>
+                        </div>
+        
+                        <div class="col">
+                            <i class="icono fas fa-phone"></i>
+                            <p>+505 6262-2222 Tigo <br> +505 3343-5434 Claro</p>
+                        </div>
+        
+                        <div class="redes-s">
+        
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+        
+                        </div>
+        
+                    </div>
+                            <!-- Formulario de contacto -->
+                            <form id="contactForm" action="../html/enviado.html" method="GET" class="formulario">
+                                <p>
+                                    <label for="nombre">Nombre <span class="obligatorio"></span></label>
+                                    <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre">
+                                </p>
+                                <p>
+                                    <label for="correo">Correo electrónico <span class="obligatorio"></span></label>
+                                    <input type="email" name="correo" id="correo" required placeholder="Escribe tu email">
+                                </p>
+                                <p>
+                                    <label for="asunto">Asunto <span class="obligatorio"></span></label>
+                                    <input type="text" name="asunto" id="asunto" required placeholder="Escribe el asunto">
+                                </p>
+                                <p>
+                                    <label for="mensaje">Mensaje <span class="obligatorio"></span></label>
+                                    <textarea name="mensaje" id="mensaje" required placeholder="Deja tu mensaje aquí..."></textarea>
+                                </p>
+                                <button type="submit">Enviar</button>
+                                <p id="emailError" style="color: red; display: none;">El campo de correo electrónico debe ser de tipo '@gmail.com'</p>
+                            </form>
+                            
+                            
+                </div>
+        
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>© 2024 Aprende Desarrollo Web. Todos los derechos reservados.</p>
+        <p>
+            <a href="#">HTML</a> |
+            <a href="#">CSS</a> |
+            <a href="#">JavaScript</a>
+            <a href="#">C#</a> |
+            <a href="#">C++</a> 
+        </p>
+        <p>
+            Sigue aprendiendo y mejorando tus habilidades. 
+            <a href="#">Contacto</a> |
+            <a href="#">Sobre Nosotros</a> |
+            <a href="#">Privacidad</a>
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/contacto.js"></script>
+    <script src="../js/menu.js"></script>
+    
+</body>
+</html>

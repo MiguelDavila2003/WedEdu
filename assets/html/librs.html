@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Libros</title>
+    <link rel="stylesheet" href="../css/librs.css">
+</head>
+<body>
+    <header class="hero">
+        <!-- Navbar --> 
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">WebEdu Libre</h2>
+            </div>
+    
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="../../index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="nosotros.html" class="nav__links">Nosotros</a>
+                </li>
+                <li class="nav__items">
+                    <a href="cursos.html" class="nav__links">Cursos</a>
+                </li>
+                <li class="nav__items">
+                    <a href="librs.html" class="nav__links">Libros</a>
+                </li>
+                <li class="nav__items">
+                    <a href="contacto.html" class="nav__links">Contáctanos</a>
+                </li>
+                
+                <img src="../img/close.svg" class="nav__close" alt="Cerrar menú">
+            </ul>
+            <div class="nav__menu">
+                <img src="../img/menu.svg" class="nav__img" alt="Abrir menú">
+            </div>
+        </nav>
+    </header>
+
+    <h1>Libros</h1><!-- Título principal de la página -->
+    <p class="cursos__paragraph">En estos libros puedes buscar información sobre los cursos ofrecidos, así como una guía más amplia de temas y de ejemplos.
+         Estos libros te ayudarán a tener más conocimiento sobre los lenguajes de programación HTML, CSS, JavaScript, C++, C#, SQL.</p>
+
+    <main>
+        <section class="libros container">
+               <!-- Artículos de libros -->
+            <article class="libro">
+                <img src="../img/Librohtml.jpg" alt="">
+                <h3 class="libro__title">Título: HTML Básico</h3>
+                <p class="libro__description">Autor: Jorge Ferrer</p>
+                <button class="btn" data-pdf="../libros/Curso de HTML basico Jorge Ferre.pdf">Vista Previa</button>
+            </article>
+
+            <article class="libro">
+                <img src="../img/libroscss.jpg" alt="">
+                <h3 class="libro__title">Título: Introducción a CSS</h3>
+                <p class="libro__description">Autor: Javier Eguíluz Pérez</p>
+                <button class="btn" data-pdf="../libros/Pérez, Javier Eguíluz - Introducción a CSS.pdf">Vista Previa</button>
+            </article>
+
+            <article class="libro">
+                <img src="../img/libhtmlycss.png" alt="">
+                <h3 class="libro__title">Título: HTML y CSS Intermedio: Guía Rápida</h3>
+                <p class="libro__description">Autor: Carlos García</p>
+                <button class="btn" data-pdf="../libros/libro3pdf.pdf">Vista Previa</button>
+            </article>
+
+            <article class="libro">
+                <img src="../img/libjs.jfif" alt="">
+                <h3 class="libro__title">Título: Introducción JavaScript</h3>
+                <p class="libro__description">Autor: Javier Eguíluz Pérez</p>
+                <button class="btn" data-pdf="../libros/introduccion_javascriptJavier Eguíluz Pérez.pdf">Vista Previa</button>
+            </article>
+
+            <article class="libro">
+                <img src="../img/libjs2.jpg" alt="">
+                <h3 class="libro__title">Título: JavaScript Intermedio</h3>
+                <p class="libro__description">Autor: Rafael Menéndez</p>
+                <button class="btn" data-pdf="../libros/javascrisph2.pdf">Vista Previa</button>
+            </article>
+
+            <article class="libro">
+                <img src="../img/42_informatica-web.jpg" alt="">
+                <h3 class="libro__title">Título: Introducción a C#</h3>
+                <p class="libro__description">Autor: Miguel Muñoz</p>
+                <button class="btn" data-pdf="../libros/C%23basico.pdf">Vista Previa</button>
+            </article>
+            
+
+            <article class="libro">
+                <img src="../img/librsc++.jpg" alt="">
+                <h3 class="libro__title">Título: C++ Essentials</h3>
+                <p class="libro__description">Autor: Sergio Talens Oliag</p>
+                <button class="btn" data-pdf="../libros/C++basico.pdf">Vista Previa</button>
+            </article>
+
+            <article class="libro">
+                <img src="../img/librsc++2.jpg" alt="">
+                <h3 class="libro__title">Título: C++ Intermedio</h3>
+                <p class="libro__description">Autor: Sergio Talens Oliag</p>
+                <button class="btn" data-pdf="../libros/c++intermedio.pdf">Vista Previa</button>
+            </article>
+
+            <article class="libro">
+                <img src="../img/sqlli.png" alt="">
+                <h3 class="libro__title">Título: SQL Server Basics</h3>
+                <p class="libro__description">Autor: Ing. Gerardo Valdez Medina</p>
+                <button class="btn" data-pdf="../libros/sqlbasico.pdf">Vista Previa</button>
+            </article>
+        </section>
+                <!-- Modal para vista previa del PDF -->
+
+
+        <div id="pdfModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <iframe id="pdfFrame" width="100%" height="800px"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Aprende Desarrollo Web. Todos los derechos reservados.</p>
+        <p>
+            <a href="#">HTML</a> |
+            <a href="#">CSS</a> |
+            <a href="#">JavaScript</a> |
+            <a href="#">C#</a> |
+            <a href="#">C++</a>
+        </p>
+        <p>
+            Sigue aprendiendo y mejorando tus habilidades.
+            <a href="#">Contacto</a> |
+            <a href="#">Sobre Nosotros</a> |
+            <a href="#">Privacidad</a>
+        </p>
+    </footer>
+
+    <script src="../js/catalago.js"></script><!-- Script para manejar la funcionalidad del mostrar la vista previa -->
+    <script src="../js/menu.js"></script><!-- Script para manejar la funcionalidad del menú -->
+</body>
+</html>

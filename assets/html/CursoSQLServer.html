@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL  Básico</title>
+    <link rel="stylesheet" href="../css/CursoSQLServer.css">
+</head>
+<body>
+    <header>
+        <h1>CURSO BÁSICO DE SQL SERVER</h1> 
+    </header>
+    <a href="../html/cursos.html" type="button" class="btn">Regresar</a>
+    <main>
+        <section class="preguntas container">
+            <h2 class="subtitle">Tabla de Contenido</h2>
+            <p class="preguntas__paragraph">Explora cómo SQL Server te permite gestionar y manipular bases de datos de manera eficiente.</p>
+            <section class="preguntas container">
+                <!-- Tema 1 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 1: Introducción a SQL Server
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">SQL Server es un sistema de gestión de bases de datos relacional desarrollado por Microsoft, que utiliza el lenguaje SQL para gestionar datos.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+                <code>SELECT GETDATE(); -- Muestra la fecha y hora actual</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 2 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 2: Creación de bases de datos
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Para crear una nueva base de datos en SQL Server, utilizamos el comando `CREATE DATABASE`.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+                        <code>CREATE DATABASE MiBaseDeDatos;</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 3 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 3: Creación y modificación de tablas
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Las tablas se crean y modifican usando los comandos `CREATE TABLE` y `ALTER TABLE` para definir las estructuras y campos de los datos.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>CREATE TABLE Empleados (
+    ID INT PRIMARY KEY,
+    Nombre NVARCHAR(50),
+    FechaContratacion DATE
+);
+
+ALTER TABLE Empleados
+ADD Salario DECIMAL(10, 2);</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 4 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 4: Consultas básicas
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Las consultas básicas se realizan con el comando `SELECT`, permitiendo recuperar datos de una o más tablas.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+                            <code>SELECT Nombre, FechaContratacion
+                               FROM Empleados
+                               WHERE Salario > 50000;</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 5 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 5: Inserción, actualización y eliminación de datos
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Los datos en las tablas se insertan con `INSERT INTO`, se actualizan con `UPDATE` y se eliminan con `DELETE`.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>INSERT INTO Empleados (ID, Nombre, FechaContratacion, Salario)
+VALUES (1, 'Juan Pérez', '2024-01-15', 60000);
+
+UPDATE Empleados
+SET Salario = 65000
+WHERE ID = 1;
+
+DELETE FROM Empleados
+WHERE ID = 1;</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 6 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 6: Funciones y procedimientos almacenados
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Las funciones y procedimientos almacenados permiten encapsular lógica compleja para reutilizarla y mejorar el rendimiento.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>CREATE PROCEDURE ObtenerEmpleados
+AS
+BEGIN
+    SELECT * FROM Empleados;
+END;
+
+CREATE FUNCTION CalcularBonificacion (@Salario DECIMAL(10, 2))
+RETURNS DECIMAL(10, 2)
+AS
+BEGIN
+    RETURN @Salario * 0.10;
+END;</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 7 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 7: Índices y claves foráneas
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Los índices mejoran el rendimiento de las consultas, mientras que las claves foráneas aseguran la integridad referencial entre tablas.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>CREATE INDEX idx_Nombre
+ON Empleados (Nombre);
+
+ALTER TABLE Empleados
+ADD CONSTRAINT fk_Departamento
+FOREIGN KEY (DepartamentoID) REFERENCES Departamentos(ID);</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 8 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 8: Consultas avanzadas
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Las consultas avanzadas incluyen el uso de `JOIN`, subconsultas y funciones agregadas para obtener datos complejos y resumidos.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+                  <code>SELECT e.Nombre, d.Nombre AS Departamento
+                FROM Empleados e
+                JOIN Departamentos d ON e.DepartamentoID = d.ID
+                WHERE e.Salario > 50000;</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 9 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 9: Seguridad y permisos
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">La seguridad en SQL Server se gestiona mediante roles y permisos para controlar el acceso y la modificación de los datos.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+                    <code>CREATE LOGIN UsuarioAdmin WITH PASSWORD = 'ContraseñaSegura!';
+CREATE USER UsuarioAdmin FOR LOGIN UsuarioAdmin;
+ALTER ROLE db_owner ADD MEMBER UsuarioAdmin;</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 10 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 10: Mantenimiento de bases de datos
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">El mantenimiento incluye tareas como la optimización de consultas, el respaldo de datos y la restauración de bases de datos.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+                              <code>BACKUP DATABASE MiBaseDeDatos
+TO DISK = 'C:\\Backup\\MiBaseDeDatos.bak';
+
+RESTORE DATABASE MiBaseDeDatos
+FROM DISK = 'C:\\Backup\\MiBaseDeDatos.bak';</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Aprende Desarrollo Web. Todos los derechos reservados.</p>
+        <p>
+            <a href="#">HTML</a> |
+            <a href="#">CSS</a> |
+            <a href="#">JavaScript</a> |
+            <a href="#">C#</a> |
+            <a href="#">SQL Server</a>
+        </p>
+        <p>Sigue aprendiendo y mejorando tus habilidades. 
+            <a href="#">Contacto</a> | 
+            <a href="#">Sobre Nosotros</a> | 
+            <a href="#">Privacidad</a>
+        </p>
+    </footer>
+    <script src="../js/acordeon.js"></script>
+</body>
+</html>

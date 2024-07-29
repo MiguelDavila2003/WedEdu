@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Básico</title>
+    <link rel="stylesheet" href="../css/CursoC++.css">
+</head>
+<body>
+    <header>
+        <!-- Encabezado principal del documento -->
+        <h1>CURSO BÁSICO DE C++</h1> 
+    </header>
+    <!-- Enlace para regresar a la página de cursos -->
+    <a href="../html/cursos.html" type="button" class="btn">Regresar</a>
+    <main>
+        <!-- Sección principal de contenido -->
+        <section class="preguntas container">
+            <h2 class="subtitle">Tabla de Contenido</h2>
+            <p class="preguntas__paragraph">Explora cómo C++ te permite desarrollar aplicaciones eficientes y de alto rendimiento.</p>
+            <!-- Contenedor de los artículos de preguntas y respuestas -->
+            <section class="preguntas container">
+                <!-- Tema 1 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 1: Introducción a C++
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">C++ es un lenguaje de programación de propósito general que se utiliza en una variedad de aplicaciones, desde sistemas operativos hasta videojuegos.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+                                    <code>#include &lt;iostream&gt;
+                                        using namespace std;
+                                        
+                                        int main() {
+                                            cout << "Hola, Mundo!" << endl;
+                                            return 0;
+                                        }</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 2 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 2: Variables y tipos de datos
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Las variables son contenedores para almacenar datos. Los tipos de datos comunes en C++ incluyen enteros, flotantes, caracteres y booleanos.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+                                    <code>int edad = 25;
+                            float altura = 1.75;
+                            char inicial = 'J';
+                            bool esEstudiante = true;
+                        </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 3 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 3: Operadores
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Los operadores se utilizan para realizar operaciones sobre variables y valores. Incluyen operadores aritméticos, de asignación y de comparación.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+                                    <code>int suma = 5 + 3; // 8
+                            bool esIgual = (5 == 5); // true</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 4 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 4: Estructuras de control
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Las estructuras de control, como if, else y switch, permiten tomar decisiones basadas en condiciones.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>int edad = 18;
+if (edad >= 18) {
+    cout << "Eres adulto." << endl;
+} else {
+    cout << "Eres menor de edad." << endl;
+}</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 5 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 5: Funciones
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Las funciones son bloques de código diseñados para realizar una tarea particular, y pueden ser reutilizadas en cualquier parte del programa.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>void saludar(string nombre) {
+    cout << "Hola, " << nombre << endl;
+}
+
+int main() {
+    saludar("Ana"); // Hola, Ana
+    return 0;
+}</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 6 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 6: Arreglos y estructuras
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Los arreglos y las estructuras son formas de almacenar múltiples valores en una sola variable. Las estructuras permiten agrupar diferentes tipos de datos.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>int numeros[] = {1, 2, 3, 4, 5};
+
+struct Persona {
+    string nombre;
+    int edad;
+};
+
+Persona persona1;
+persona1.nombre = "Carlos";
+persona1.edad = 25;</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 7 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 7: Punteros
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Los punteros son variables que almacenan la dirección de memoria de otra variable, lo que permite manipular datos de forma eficiente.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+                                    <code>int valor = 10;
+                            int* ptr = &valor;
+                 cout << "Valor: " << *ptr << endl; // 10</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 8 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 8: Clases y objetos
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Las clases y objetos son los bloques de construcción fundamentales de la programación orientada a objetos en C++.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>class Persona {
+public:
+    string nombre;
+    int edad;
+
+    void saludar() {
+        cout << "Hola, me llamo " << nombre << endl;
+    }
+};
+
+int main() {
+    Persona persona1;
+    persona1.nombre = "Lucía";
+    persona1.edad = 28;
+    persona1.saludar(); // Hola, me llamo Lucía
+    return 0;
+}</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 9 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 9: Herencia y polimorfismo
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">La herencia permite crear nuevas clases basadas en clases existentes. El polimorfismo permite utilizar una interfaz común para diferentes tipos de datos.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>class Animal {
+public:
+    virtual void hacerSonido() {
+        cout << "Sonido de animal" << endl;
+    }
+};
+
+class Perro : public Animal {
+public:
+    void hacerSonido() override {
+        cout << "Guau" << endl;
+    }
+};
+
+int main() {
+    Animal* miAnimal = new Perro();
+    miAnimal->hacerSonido(); // Guau
+    delete miAnimal;
+    return 0;
+}</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 10 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 10: Manejo de archivos
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">El manejo de archivos en C++ permite leer y escribir datos en archivos, facilitando el almacenamiento y recuperación de información.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>#include &lt;fstream&gt;
+
+int main() {
+    ofstream archivo("ejemplo.txt");
+    archivo << "Hola, archivo!" << endl;
+    archivo.close();
+
+    ifstream leerArchivo("ejemplo.txt");
+    string linea;
+    while (getline(leerArchivo, linea)) {
+        cout << linea << endl;
+    }
+    leerArchivo.close();
+    return 0;
+}</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 11 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 11: Plantillas (Templates)
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">Las plantillas permiten crear funciones y clases genéricas, facilitando el uso de código reutilizable para diferentes tipos de datos.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>template &lt;typename T&gt;
+T obtenerMaximo(T a, T b) {
+    return (a > b) ? a : b;
+}
+
+int main() {
+    cout << obtenerMaximo(10, 20) << endl; // 20
+    cout << obtenerMaximo(5.5, 2.3) << endl; // 5.5
+    return 0;
+}</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 12 -->
+                <article class="preguntas__padding">
+                    <div class="preguntas__answer">
+                        <h3 class="preguntas__title">Tema 12: Librerías estándar
+                            <span class="preguntas__arrow">
+                                <img src="../img/arrow.svg" class="preguntas__img">
+                            </span>
+                        </h3>
+                        <div class="preguntas__content">
+                            <p class="preguntas__concept">La Standard Template Library (STL) proporciona una colección de clases y funciones que facilitan la manipulación de datos y estructuras.</p>
+                            <div class="preguntas__example">
+                                <p><strong>Ejemplo práctico:</strong></p>
+                                <pre class="preguntas__show">
+<code>#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+using namespace std;
+
+int main() {
+    vector&lt;int&gt; numeros = {5, 3, 8, 1, 2};
+    sort(numeros.begin(), numeros.end());
+
+    for (int num : numeros) {
+        cout << num << " ";
+    } // 1 2 3 5 8
+    return 0;
+}</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Aprende Desarrollo Web. Todos los derechos reservados.</p>
+        <p>
+            <a href="#">HTML</a> |
+            <a href="#">CSS</a> |
+            <a href="#">JavaScript</a> |
+            <a href="#">C#</a> |
+            <a href="#">C++</a>
+        </p>
+        <p>Sigue aprendiendo y mejorando tus habilidades. 
+            <a href="#">Contacto</a> | 
+            <a href="#">Sobre Nosotros</a> | 
+            <a href="#">Privacidad</a>
+        </p>
+    </footer>
+    <!-- Enlace al archivo JavaScript para funcionalidad adicional -->
+    <script src="../js/acordeon.js"></script>
+</body>
+</html>
